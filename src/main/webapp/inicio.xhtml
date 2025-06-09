@@ -12,7 +12,17 @@
             <h:outputText value="Usuario:" />
             <h:outputText value="#{login.usuario}" />
         </h:panelGrid>
-
+        <br/>
+        <h:form>
+            <h:commandButton value="Cerrar Sesión"
+                             action="#{login.cerrarSesion()}"
+                             styleClass="boton-login" />
+        </h:form>
+        <h:form>
+            <h:commandButton value="Listar Usuarios"
+                             action="usuarios?faces-redirect=true"
+                             styleClass="boton-login" />
+        </h:form>
     </h:body>
 </html>
 
